@@ -14,7 +14,7 @@ The game ends if the snake collides with the wall or with its own tail.
 ## How to Run
 1. Clone this repository:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/martialchess/Snake-Game-OOP.git
 
 2. Navigate into the project folder:
    cd snake-game
