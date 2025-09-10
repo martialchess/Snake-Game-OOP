@@ -1,14 +1,19 @@
-# Ignore Python cache files
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.db
 
-# Ignore virtual environment folders
+# Virtual environment
 venv/
 ENV/
-env/
+.env/
+.venv/
 
-# Ignore OS-specific files
+# VSCode
+.vscode/
+
+# Mac / Windows system files
 .DS_Store
 Thumbs.db

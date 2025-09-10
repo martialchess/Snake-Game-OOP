@@ -58,6 +58,7 @@ while game_is_on:
         ):
         print(f"Game Over! Hit the wall 🚧 Final Score: {scoreboard.score}")
         game_is_on = False
+        scoreboard.game_over()
 
     # Detect collision with tail
 
@@ -65,6 +66,7 @@ while game_is_on:
         if snake.head.distance(segment) < 15:
             print(f"Game Over! Ran into yourself 🌀 Final Score: {scoreboard.score}")
             game_is_on = False
+            scoreboard.game_over()
 
 
 
