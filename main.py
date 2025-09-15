@@ -57,16 +57,20 @@ while game_is_on:
         or snake.head.ycor() <= -280
         ):
         print(f"Game Over! Hit the wall 🚧 Final Score: {scoreboard.score}")
-        game_is_on = False
-        scoreboard.game_over()
+        scoreboard.reset()
+        snake.respawn()
+        # game_is_on = False
+        # scoreboard.game_over()
 
     # Detect collision with tail
 
     for segment in snake.segments[1:]: # skip the head at index 0
         if snake.head.distance(segment) < 15:
             print(f"Game Over! Ran into yourself 🌀 Final Score: {scoreboard.score}")
-            game_is_on = False
-            scoreboard.game_over()
+            scoreboard.reset()
+            snake.respawn()
+            # game_is_on = False
+            # scoreboard.game_over()
 
 
 
